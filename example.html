@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Background Video</title>
+    <link rel="stylesheet" href="build/build.css">
+    <script src="build/build.js"></script>
+  </head>
+  <body>
+    <div id="background-video"></div>
+    <script>
+      var video = require('background-video');
+      var el = document.querySelector('#background-video');
+      video(el, ['example_files/yeah-baby.mp4', 'example_files/yeah-baby.ogg']);
+    </script>
+  </body>
+</html>
