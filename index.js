@@ -1,16 +1,21 @@
-var path = require('path'),
-    toArray = require('to-array'),
-    forEach = require('for-each');
+var each = require('each');
+var path = require('path');
+var toArray = require('to-array');
 
 module.exports = BackgroundVideo;
 
+/**
+ * [BackgroundVideo Add background video from a source or sources to any element]
+ * @param {DOM element} el [DOM element to apply background video to]
+ * @param {string or array of strings} srcs [video sources for background video]
+ */
 function BackgroundVideo(el, srcs) {
   var video = document.createElement('video');
   video.loop = true;
   video.muted = true;
   video.autoplay = true;
 
-  forEach(toArray(srcs), function(src) {
+  each(toArray(srcs), function(src) {
     var source = document.createElement('source');
     source.src = src;
     source.type = 'video/' + path.extname(src).replace('.', '');

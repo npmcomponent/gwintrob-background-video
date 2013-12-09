@@ -3,20 +3,18 @@
   "repo": "gwintrob/background-video",
   "description": "Add a video background to an element",
   "version": "0.0.1",
-  "keywords": [],
+  "license": "MIT",
+  "keywords": ["video"],
   "dependencies": {
+    "component/each": "*",
     "component/path": "*",
-    "kewah/for-each": "*",
     "timoxley/to-array": "*"
   },
   "development": {},
-  "license": "MIT",
-  "main": "index.js",
   "scripts": [
-    "index.js",
-    "template.js"
+    "index.js"
   ],
   "styles": [
-    "background-video.css"
+    "index.css"
   ]
 }
