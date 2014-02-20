@@ -1,0 +1,17 @@
+{
+  "name": "gwintrob-background-video",
+  "description": "Add a video background to an element",
+  "version": "0.0.1",
+  "keywords": [
+    "video"
+  ],
+  "styles": [
+    "index.css"
+  ],
+  "dependencies": {
+    "component-each": "git://github.com/npmcomponent/component-each.git",
+    "component-path": "git://github.com/npmcomponent/component-path.git",
+    "timoxley-to-array": "git://github.com/npmcomponent/timoxley-to-array.git"
+  },
+  "license": "MIT"
+}

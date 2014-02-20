@@ -1,6 +1,6 @@
-var each = require('each');
-var path = require('path');
-var toArray = require('to-array');
+var each = require('component-each');
+var path = require('component-path');
+var toArray = require('timoxley-to-array');
 
 module.exports = BackgroundVideo;
 
